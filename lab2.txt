@@ -1,0 +1,16 @@
+Hello, this is the original version of the file.
+This file is used to test S3 Versioning and Object Lock.
+
+Experiment Steps:
+1. Upload this file to your S3 bucket.
+2. Modify and upload it again to create a new version.
+3. Lock the original version using Object Lock.
+4. Attempt to delete the locked version (it should fail).
+5. List object versions to view both copies.
+
+Purpose:
+- Test S3 versioning for recovery.
+- Test Object Lock to prevent deletion.
+
+Created by: Muntazim Alam
+Date: 2025-05-22
