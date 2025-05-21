@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyAllExceptRole",
+      "Effect": "Deny",
+      "Principal": "*",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::muntazim1",
+        "arn:aws:s3:::muntazim1/*"
+      ],
+      "Condition": {
+        "StringNotEquals": {
+          "aws:PrincipalArn": "arn:aws:iam::123456789012:role/alam-access-role"
+        }
+      }
+    }
+  ]
+}
